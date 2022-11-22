@@ -1,8 +1,8 @@
 # Maintainer: Andreas Radke <andyrtr@archlinux.org>
 
 pkgname=libinput
-pkgver=1.21.0
-pkgrel=2
+pkgver=1.22.0
+pkgrel=1
 pkgdesc="Input device management and event handling library"
 url="https://gitlab.freedesktop.org/libinput"
 arch=(aarch64)
@@ -13,13 +13,13 @@ makedepends=('gtk4' 'meson' 'wayland-protocols' 'check') # 'doxygen' 'graphviz' 
 optdepends=('gtk4: libinput debug-gui'
             'python-pyudev: libinput measure'
             'python-libevdev: libinput measure')
-#options=(debug)
+options=(debug)
 source=(
 https://gitlab.freedesktop.org/libinput/libinput/-/archive/$pkgver/$pkgname-$pkgver.tar.bz2
 no-palm-exclusion-zones.patch
 )
 sha256sums=(
-'3173d83e0f5a686606d2780129c802b865b6a0750c86db88d56097afc016a2dd'
+'b9204a860b4f6f9b2587c484f67a21fbdedd01a97db1f983b0b51cb7bdd428aa'
 'd38aa046d680677e55a05f92d9f77b66152a4fed3e42bf10f38cd11447205d7b'
 )
 #validpgpkeys=('3C2C43D9447D5938EF4551EBE23B7E70B467F0BF') # Peter Hutterer (Who-T) <office@who-t.net>
